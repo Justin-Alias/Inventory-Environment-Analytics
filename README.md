@@ -40,18 +40,18 @@ Features:
 
 CSV Sources
 
-↓
+    ↓
 
 MySQL Import
 
-↓
+    ↓
 
 SQL Processing
 
-↓
+    ↓
 
 Power BI ETL
 
-↓
+    ↓
 
 Dashboard Visualization
