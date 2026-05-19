@@ -98,7 +98,7 @@ Power BI Source Transition
 
 ## 📊 Dashboard Features
 
-### Page 1 — Inventory Availability Metrics
+### Page 1 - Inventory Availability Metrics
 
 > Tracks supply-demand balance across the inventory timeline.
 
@@ -115,7 +115,7 @@ Power BI Source Transition
 
 ---
 
-### Page 2 — Financial Impact Metrics
+### Page 2 - Financial Impact Metrics
 
 > Quantifies the revenue and loss impact of supply chain performance.
 
