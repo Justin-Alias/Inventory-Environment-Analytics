@@ -133,6 +133,7 @@ Production Dashboard Deployment
 | Average Daily Loss | Mean daily financial impact of shortages |
 
 </div>
+
 **Filters:** Date Range · Product
 
 ![Dashboard Page 2](Screenshots/Dashboard-2.png)
@@ -152,24 +153,33 @@ Production Dashboard Deployment
 | Reporting table creation | Complete |
 | Product cleanup | Complete |
 | Production restructuring | Complete |
+
 </div>
+
 ### Power Query Tasks
+
 <div align="center">
+       
 | Task | Status |
 |---|---|
 | Datatype conversion | Complete |
 | Data validation | Complete |
 | Report preparation | Complete |
+
 </div>
 ---
 
 ## Data Source Migration
+
+<div align="center">
 
 | | Before | After |
 |---|---|---|
 | **Datasource** | MySQL Server | MySQL Database |
 | **Connector** | Direct connection | MySQL Connector |
 | **Tool** | - | MySQL Workbench |
+
+</div>
 
 **Migration Steps:**
 
@@ -183,6 +193,8 @@ Production Dashboard Deployment
 
 ## Technologies
 
+<div align="center">
+
 | Tool | Purpose |
 |---|---|
 | **MySQL** | Relational database engine |
@@ -191,6 +203,8 @@ Production Dashboard Deployment
 | **Power BI** | Dashboard creation and data visualization |
 | **Power Query** | In-report data transformation and type management |
 | **MySQL Connector** | Bridge between MySQL and Power BI |
+
+</div>
 
 ---
 
