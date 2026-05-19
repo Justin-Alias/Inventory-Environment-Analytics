@@ -126,7 +126,7 @@ Filters:
 - Date Filter
 - Product Filter
 
-![Dashboard Page 2](Screenshots/Dshboard-2.png)
+![Dashboard Page 2](Screenshots/Dashboard-2.png)
 
 ---
 
