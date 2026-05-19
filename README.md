@@ -18,7 +18,7 @@ Features:
 
 ### Dashboard Page 1
 
-![Dashboard 1](screenshots/Dashboard-1.png)
+![Dashboard 1](Screenshots/Dashboard-1.png)
 
 ### Dashboard Page 2
 
