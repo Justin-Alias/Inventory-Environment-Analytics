@@ -1,184 +1,188 @@
-# Inventory Environment Migration & Analytics Dashboard
-**MySQL • SQL • Power BI • Power Query • MySQL Connector**
+# 📦 Inventory Environment Migration & Analytics Dashboard
+
+<div align="center">
+
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![Power Query](https://img.shields.io/badge/Power_Query-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
+
+*An enterprise-grade workflow for migrating inventory analytics from TEST → PRODUCTION with uninterrupted Power BI reporting.*
+
+</div>
 
 ---
 
-## Project Overview
+## 📋 Project Overview
 
-This project simulates an enterprise workflow for transitioning inventory analytics from a TEST environment into a PRODUCTION environment while maintaining reporting continuity in Power BI.
+This project simulates an enterprise workflow for transitioning inventory analytics from a **TEST** environment into a **PRODUCTION** environment while maintaining reporting continuity in Power BI.
 
-The project involved:
-
-- Building TEST and PROD environments
-- Importing inventory datasets into MySQL
-- Cleaning and transforming data
-- Performing SQL joins for reporting preparation
-- Creating Power BI dashboards
-- Migrating the reporting datasource from MySQL Server to MySQL Database via MySQL Connector
+| Phase | Description |
+|---|---|
+| 🏗️ Environment Setup | Built TEST and PROD database environments in MySQL |
+| 📥 Data Ingestion | Imported inventory datasets from CSV sources |
+| 🧹 Data Cleaning | Cleaned, transformed, and deduplicated records |
+| 🔗 SQL Joins | Performed LEFT JOIN operations for reporting preparation |
+| 📊 Dashboard Build | Created multi-page Power BI dashboards |
+| 🔄 Migration | Transitioned datasource from MySQL Server → MySQL Database via Connector |
 
 ---
 
-## Architecture
+## 🏛️ Architecture
 
+```
 CSV Data Sources
-
-↓
-
-TEST Database
-
-↓
-
+       │
+       ▼
+TEST Database (MySQL)
+       │
+       ▼
 SQL Cleaning & LEFT JOIN Transformations
-
-↓
-
+       │
+       ▼
 Prepared Reporting Table
-
-↓
-
+       │
+       ▼
 Power BI Dashboard (TEST)
-
-↓
-
+       │
+       ▼
 PROD Database Migration
-
-↓
-
+       │
+       ▼
 MySQL Workbench + Connector
-
-↓
-
+       │
+       ▼
 Power BI Source Transition
-
-↓
-
-Production Dashboard Deployment
+       │
+       ▼
+✅ Production Dashboard Deployment
+```
 
 ---
 
-## Environment Setup
+## ⚙️ Environment Setup
 
-### TEST Environment
+### 🧪 TEST Environment
 
-Created:
-
+**Tables Created:**
 - `Products`
 - `Test_Environment_Inventory_Dataset`
 
-Steps:
+**Steps Completed:**
 
-1. Imported CSV files
-2. Performed LEFT JOIN operations
-3. Created reporting table
-4. Connected Power BI
+1. Imported CSV files into MySQL
+2. Performed `LEFT JOIN` operations across tables
+3. Created the reporting table
+4. Connected Power BI to the TEST database
 5. Adjusted datatypes using Power Query
-6. Built dashboard
+6. Built and validated the dashboard
 
 ---
 
-### Production Environment
+### 🚀 Production Environment
 
-Created:
-
+**Tables Created:**
 - `Products1`
 - `PROD_Environment_Inventory_Dataset`
 
-Tasks completed:
+**Tasks Completed:**
 
-- Imported datasets
-- Removed duplicate / extra Product IDs
-- Cleaned inventory records
-- Structured production dataset
-- Applied LEFT JOIN transformation
-- Built reporting table
+- Imported production datasets
+- Removed duplicate and extra Product IDs
+- Cleaned and standardized inventory records
+- Structured the production dataset for reporting
+- Applied `LEFT JOIN` transformation
+- Built and validated the production reporting table
 
 ---
 
-## Dashboard Features
+## 📊 Dashboard Features
 
 ### Page 1 — Inventory Availability Metrics
 
-KPIs:
+> Tracks supply-demand balance across the inventory timeline.
 
-- Average Demand Per Day
-- Average Availability Per Day
-- Total Supply Shortage
+**KPIs:**
+| Metric | Description |
+|---|---|
+| 📈 Average Demand Per Day | Mean daily product demand |
+| 📦 Average Availability Per Day | Mean daily stock on hand |
+| ⚠️ Total Supply Shortage | Cumulative shortfall across the period |
 
-Filters:
+**Filters:** Date Range · Product
 
-- Date Filter
-- Product Filter
-
-![Dashboard Page 1](Screenshots/Dashboard-1.png)
+![Dashboard Page 1](screenshots/Dashboard-1.png)
 
 ---
 
 ### Page 2 — Financial Impact Metrics
 
-KPIs:
+> Quantifies the revenue and loss impact of supply chain performance.
 
-- Total Loss
-- Total Profit
-- Average Daily Loss
+**KPIs:**
+| Metric | Description |
+|---|---|
+| 💸 Total Loss | Revenue lost due to stockouts |
+| 💰 Total Profit | Revenue generated from fulfilled demand |
+| 📉 Average Daily Loss | Mean daily financial impact of shortages |
 
-Filters:
+**Filters:** Date Range · Product
 
-- Date Filter
-- Product Filter
-
-![Dashboard Page 2](Screenshots/Dashboard-2.png)
-
----
-
-## ETL & Transformation Workflow
-
-SQL Tasks:
-
-✔ Data imports
-
-✔ LEFT JOIN preparation
-
-✔ Reporting table creation
-
-✔ Product cleanup
-
-✔ Production restructuring
-
-Power Query Tasks:
-
-✔ Datatype conversion
-
-✔ Data validation
-
-✔ Report preparation
+![Dashboard Page 2](screenshots/Dashboard-2.png)
 
 ---
 
-## Data Source Migration
+## 🔄 ETL & Transformation Workflow
 
-Initial datasource:
+### SQL Tasks
+| Task | Status |
+|---|---|
+| Data imports | ✅ Complete |
+| LEFT JOIN preparation | ✅ Complete |
+| Reporting table creation | ✅ Complete |
+| Product cleanup | ✅ Complete |
+| Production restructuring | ✅ Complete |
 
-MySQL Server
-
-Migrated to:
-
-MySQL Database via MySQL Connector + MySQL Workbench
-
-Migration tasks:
-
-1. Created PROD server in MySQL Workbench
-2. Imported production datasets
-3. Configured MySQL Connector
-4. Redirected Power BI datasource
-5. Re-published report using production source
+### Power Query Tasks
+| Task | Status |
+|---|---|
+| Datatype conversion | ✅ Complete |
+| Data validation | ✅ Complete |
+| Report preparation | ✅ Complete |
 
 ---
 
-## Technologies
+## 🔌 Data Source Migration
 
-- MySQL
-- MySQL Workbench
-- SQL
-- Power BI
-- Power Query
-- MySQL Connector
+| | Before | After |
+|---|---|---|
+| **Datasource** | MySQL Server | MySQL Database |
+| **Connector** | Direct connection | MySQL Connector |
+| **Tool** | — | MySQL Workbench |
+
+**Migration Steps:**
+
+1. Created the PROD server in MySQL Workbench
+2. Imported all production datasets
+3. Configured the MySQL Connector
+4. Redirected the Power BI datasource to PROD
+5. Re-published the report using the production source
+
+---
+
+## 🛠️ Technologies
+
+| Tool | Purpose |
+|---|---|
+| **MySQL** | Relational database engine |
+| **MySQL Workbench** | Database management & query interface |
+| **SQL** | Data cleaning, joins, and reporting prep |
+| **Power BI** | Dashboard creation and data visualization |
+| **Power Query** | In-report data transformation and type management |
+| **MySQL Connector** | Bridge between MySQL and Power BI |
+
+---
+
+<div align="center">
+<sub>Built to demonstrate enterprise ETL and BI migration workflows.</sub>
+</div>
