@@ -111,7 +111,7 @@ Power BI Source Transition
 
 **Filters:** Date Range · Product
 
-![Dashboard Page 1](screenshots/Dashboard-1.png)
+![Dashboard Page 1](Screenshots/Dashboard-1.png)
 
 ---
 
@@ -128,7 +128,7 @@ Power BI Source Transition
 
 **Filters:** Date Range · Product
 
-![Dashboard Page 2](screenshots/Dashboard-2.png)
+![Dashboard Page 2](Screenshots/Dashboard-2.png)
 
 ---
 
