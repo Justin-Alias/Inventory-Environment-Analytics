@@ -1,0 +1,31 @@
+Using MySQL, MySQL Sever Management Studio & MySQL Workbench - Password 0326
+
+Goal: Transfer data from a test server and move it to the production environment and create 2 pages with Power BI 
+Page 1
+Average demand Per Day
+Average Availability Per Day 
+Total Supply Shortage
+Page 2
+Total Loss
+Total Profit
+Average Daily Loss
+Filters on Pages
+Data Filter
+Filter for Products
+
+Created the test database (test env)
+Imported the two csv files into the database (Products, Test_Environment_Inventory_Dataset)
+Apply a Left Join in SQL Server to prep data for being used 
+Insert the Left Join into a new table 
+Connected Power BI to the Test_env database and to the new table that was created
+Using Power Query Editor changed the data types to reflect the data
+Created the report with the two pages
+Created the Production Data base and imported the two data files (Products1, PROD_Environment_Inventory_Dataset)
+Clean Prepared and Structured the data within MySQL Sever Management Studio removing extra product ID
+Apply a Left Join in SQL Server to prep data for being used
+Insert the Left Join into a new table
+Connected Power BI to the PROD database and to the new table that was created
+
+Now we are going to change the data source from MYSQL Server to MYSQL Database we will do this using MYSQL Connector 
+create the PROD server in  MYSQL Workbench, and imported both (Products1, PROD_Environment_Inventory_Dataset)
+Now Connected Power Bi report to the new PROD data source (MYSQL Workbench) and transitioned the report from the old data source MYSQL Server to new data source MYSQL Database and uploaded the report again with the updated data source.
