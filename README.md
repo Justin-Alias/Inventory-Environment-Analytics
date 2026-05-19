@@ -22,7 +22,7 @@ This project simulates an enterprise workflow for transitioning inventory analyt
 | 🏗️ Environment Setup | Built TEST and PROD database environments in MySQL |
 | 📥 Data Ingestion | Imported inventory datasets from CSV sources |
 | 🧹 Data Cleaning | Cleaned, transformed, and deduplicated records |
-| 🔗 SQL Joins | Performed LEFT JOIN operations for reporting preparation |
+| 🔗 SQL Joins | Performed JOIN operations for reporting preparation |
 | 📊 Dashboard Build | Created multi-page Power BI dashboards |
 | 🔄 Migration | Transitioned datasource from MySQL Server → MySQL Database via Connector |
 
@@ -37,7 +37,7 @@ CSV Data Sources
 TEST Database (MySQL)
        │
        ▼
-SQL Cleaning & LEFT JOIN Transformations
+SQL Cleaning & JOIN Transformations
        │
        ▼
 Prepared Reporting Table
