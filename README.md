@@ -22,7 +22,7 @@ Features:
 
 ### Dashboard Page 2
 
-![Dashboard 2](screenshots/Dashboard-2.png)
+![Dashboard 2](Screenshots/Dashboard-2.png)
 
 ---
 
