@@ -1,4 +1,4 @@
-# 📦 Inventory Environment Migration & Analytics Dashboard
+# Inventory Environment Migration & Analytics Dashboard
 
 <div align="center">
 
@@ -13,22 +13,22 @@
 
 ---
 
-## 📋 Project Overview
+## Project Overview
 
 This project simulates an enterprise workflow for transitioning inventory analytics from a **TEST** environment into a **PRODUCTION** environment while maintaining reporting continuity in Power BI.
 
 | Phase | Description |
 |---|---|
-| 🏗️ Environment Setup | Built TEST and PROD database environments in MySQL |
-| 📥 Data Ingestion | Imported inventory datasets from CSV sources |
-| 🧹 Data Cleaning | Cleaned, transformed, and deduplicated records |
-| 🔗 SQL Joins | Performed JOIN operations for reporting preparation |
-| 📊 Dashboard Build | Created multi-page Power BI dashboards |
-| 🔄 Migration | Transitioned datasource from MySQL Server → MySQL Database via Connector |
+| Environment Setup | Built TEST and PROD database environments in MySQL |
+| Data Ingestion | Imported inventory datasets from CSV sources |
+| Data Cleaning | Cleaned, transformed, and deduplicated records |
+| SQL | Performed JOIN operations for reporting preparation |
+| Dashboard Build | Created multi-page Power BI dashboards |
+| Migration | Transitioned datasource from MySQL Server → MySQL Database via Connector |
 
 ---
 
-## 🏛️ Architecture
+## Architecture
 
 ```
 CSV Data Sources
@@ -55,14 +55,14 @@ MySQL Workbench + Connector
 Power BI Source Transition
        │
        ▼
-✅ Production Dashboard Deployment
+Production Dashboard Deployment
 ```
 
 ---
 
-## ⚙️ Environment Setup
+## Environment Setup
 
-### 🧪 TEST Environment
+### TEST Environment
 
 **Tables Created:**
 - `Products`
@@ -79,7 +79,7 @@ Power BI Source Transition
 
 ---
 
-### 🚀 Production Environment
+### Production Environment
 
 **Tables Created:**
 - `Products1`
@@ -96,19 +96,22 @@ Power BI Source Transition
 
 ---
 
-## 📊 Dashboard Features
+## Dashboard Features
 
 ### Page 1 - Inventory Availability Metrics
 
 > Tracks supply-demand balance across the inventory timeline.
 
 **KPIs:**
+
+<div align="center">
+
 | Metric | Description |
 |---|---|
-| 📈 Average Demand Per Day | Mean daily product demand |
-| 📦 Average Availability Per Day | Mean daily stock on hand |
-| ⚠️ Total Supply Shortage | Cumulative shortfall across the period |
-
+| Average Demand Per Day | Mean daily product demand |
+| Average Availability Per Day | Mean daily stock on hand |
+| Total Supply Shortage | Cumulative shortfall across the period |
+</div>
 **Filters:** Date Range · Product
 
 ![Dashboard Page 1](Screenshots/Dashboard-1.png)
@@ -120,45 +123,53 @@ Power BI Source Transition
 > Quantifies the revenue and loss impact of supply chain performance.
 
 **KPIs:**
+
+<div align="center">
+
 | Metric | Description |
 |---|---|
-| 💸 Total Loss | Revenue lost due to stockouts |
-| 💰 Total Profit | Revenue generated from fulfilled demand |
-| 📉 Average Daily Loss | Mean daily financial impact of shortages |
+| Total Loss | Revenue lost due to stockouts |
+| Total Profit | Revenue generated from fulfilled demand |
+| Average Daily Loss | Mean daily financial impact of shortages |
 
+</div>
 **Filters:** Date Range · Product
 
 ![Dashboard Page 2](Screenshots/Dashboard-2.png)
 
 ---
 
-## 🔄 ETL & Transformation Workflow
+## ETL & Transformation Workflow
 
 ### SQL Tasks
+
+<div align="center">
+
 | Task | Status |
 |---|---|
-| Data imports | ✅ Complete |
-| LEFT JOIN preparation | ✅ Complete |
-| Reporting table creation | ✅ Complete |
-| Product cleanup | ✅ Complete |
-| Production restructuring | ✅ Complete |
-
+| Data imports | Complete |
+| LEFT JOIN preparation | Complete |
+| Reporting table creation | Complete |
+| Product cleanup | Complete |
+| Production restructuring | Complete |
+</div>
 ### Power Query Tasks
+<div align="center">
 | Task | Status |
 |---|---|
-| Datatype conversion | ✅ Complete |
-| Data validation | ✅ Complete |
-| Report preparation | ✅ Complete |
-
+| Datatype conversion | Complete |
+| Data validation | Complete |
+| Report preparation | Complete |
+</div>
 ---
 
-## 🔌 Data Source Migration
+## Data Source Migration
 
 | | Before | After |
 |---|---|---|
 | **Datasource** | MySQL Server | MySQL Database |
 | **Connector** | Direct connection | MySQL Connector |
-| **Tool** | — | MySQL Workbench |
+| **Tool** | - | MySQL Workbench |
 
 **Migration Steps:**
 
@@ -170,7 +181,7 @@ Power BI Source Transition
 
 ---
 
-## 🛠️ Technologies
+## Technologies
 
 | Tool | Purpose |
 |---|---|
